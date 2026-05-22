@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Jinho Yun
 title: "Welcome to Jekyll!"
 ---
 
