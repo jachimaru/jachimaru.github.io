@@ -70,6 +70,6 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
-theme: jekyll-theme-minimal
+theme: minima
 title: Jinho Yun DevBlog
 description: This is a blog documenting my journey into learning programming
