@@ -9,7 +9,7 @@ includes_dir        : _includes
 sass:
   sass_dir: _sass
 collections:
-  posts: _posts
+  posts:
     output          : true
 
 # Handling Reading
