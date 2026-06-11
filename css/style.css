@@ -78,7 +78,7 @@ footer {
     border-radius: 30px 30px 0px 0px;
     border: #5e6c8bd5 double 10px;
     border-bottom: none;
-    margin-block-end: -80px;
+    margin-block-end: -80000px;
 }
 
 .logo {
@@ -146,6 +146,19 @@ footer {
 .blog-post {
     margin-block: 20px;
     margin-inline: 10px;
+}
+
+.section-background-blog {
+    background-color: #3C494F;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    margin-inline: 20px;
+    border: #111 solid 5px;
+    border-radius: 30px;
+    min-inline-size: 400px;
+    margin-block: 40px;
 }
 
 .post-title {
