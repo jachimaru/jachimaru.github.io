@@ -1,14 +1,125 @@
----
-layout: default
-title: Blog
----
-<h1>Latest Posts</h1>
+<!DOCTYPE htmnl>
+<html>
+    <head>
+        <title>Blog</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+    <body>
+        <div class="wrapper">
+            <header>
+                <img src="images/logo.png" alt="Logo depicting 'JHY' in purple." class="logo">
+
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1 class="title-background">Blog</h1>
+
+                <div class="two-column-blog">
+                    <div class="sticky-bar">
+                        <!-- search bar area -->
+                        <div>
+                            <h2 class="title-background">By Project</h2>
+                        </div>
+
+                        <nav class="categories">
+                            <p><a href="blog.html">Setting Up</a></p>
+                            <p><a href="blog.html">Game Dev</a></p>
+                            <p><a href="blog.html">Web Design</a></p>
+                            <p><a href="blog.html">Other Programs</a></p>
+                            <p><a href="blog.html">Personal</a></p>
+                        </nav>
+                    </div>
+
+                    <div class="section-background">
+                        <!-- blogs area -->
+                         <h2 class="title-background">Recent Posts</h2>
+                         <div>
+                            <div class="blog-post">
+                                <div class="blog-title blog-background">
+                                    <h3><a href="posts/the-journey-begins.html">The Journey Begins</a></h3>
+                                    <h3>05/21/2026</h3>
+                                </div>
+                                <div class="blog-preview">
+                                    <p>This is my first official blog post. I got GitHub Pages and Jekyll working well enough to make posts! Now I should probably give some context to this blog. The reason I started this blog, as the Home page says, is to document my journey into learning coding.</p>
+                                </div>
+                            </div>
+                         </div>
+
+                         <div>
+                            <div class="blog-post">
+                                <div class="blog-title blog-background">
+                                    <h3><a href="posts/setting-up-my-dev-environment.html">Setting Up My Dev Environment</a></h3>
+                                    <h3>06/06/2026</h3>
+                                </div>
+                                <div class="blog-preview">
+                                    <p>This week's blog post is focused on Module 0, Setup and Tooling. In this module, I downloaded Visual Studio Code and set up my GitHub. Part of that was learning how to create repositories, make commits, and push those commits to GitHub.</p>
+                                </div>
+                            </div>
+                         </div>
+
+                         <!-- <div>
+                            <div class="blog-post">
+                                <div class="blog-title blog-background">
+                                    <h3>Blog Title</h3>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="blog-preview">
+                                    <p>First paragraph of the blog. This is an example of a few sentences. The blog preview will have about a paragraph of info here. There might be a screenshot. If there is a screenshot, maybe make this text smaller or just have a small image?</p>
+                                </div>
+                            </div>
+                         </div> -->
+
+                         <!-- <div>
+                            <div class="blog-post">
+                                <div class="blog-title blog-background">
+                                    <h3>Blog Title</h3>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="blog-preview">
+                                    <p>First paragraph of the blog. This is an example of a few sentences. The blog preview will have about a paragraph of info here. There might be a screenshot. If there is a screenshot, maybe make this text smaller or just have a small image?</p>
+                                </div>
+                            </div>
+                         </div> -->
+
+                         <!-- <div>
+                            <div class="blog-post">
+                                <div class="blog-title blog-background">
+                                    <h3>Blog Title</h3>
+                                    <h3>MM/DD/YYYY</h3>
+                                </div>
+                                <div class="blog-preview">
+                                    <p>First paragraph of the blog. This is an example of a few sentences. The blog preview will have about a paragraph of info here. There might be a screenshot. If there is a screenshot, maybe make this text smaller or just have a small image?</p>
+                                </div>
+                            </div>
+                         </div> -->
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="contact-info">
+                    <p>Contact Info:</p>
+                    <p>Email: <a href="mailto:jinhoyun@outlook.com">jinhoyun@outlook.com</a></p>
+                    <p>GitHub: <a href="https://github.com/jachimaru">jachimaru</a></p>
+                    <p>Itch.io: <a href="https://jinhoyun.itch.io/">jinhoyun</a></p>
+                </div>
+
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>

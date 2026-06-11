@@ -1,15 +1,86 @@
----
-layout: default
-title: Home
----
-
-<!DOCTYPE html>
+<!DOCTYPE htmnl>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Welcome to the Home page!</h1>
-  </body>
+    <head>
+        <title>Home</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <img src="images/logo.png" alt="Logo depicting 'JHY' in purple." class="logo">
+
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1 class="title-background">Jinho Yun - Dev Site</h1>
+
+                <div class="section-background" style="margin-block: 50px;">
+                    <h2 class="title-background">About Me</h2>
+
+                    <p>Welcome to my site! My name is Jacob, but I typically go by Jinho Yun online, and I'm a newbie programmer. Currently, I have very little experience in coding. Part of the reason for this site is to document my journey from going to zero coding experience to, hopefully, a career in it. This site, as you can see below, is also a place to put my projects as I learn and grow.</p>
+                    <h3>Interests:</h3>
+                    <ul class="no-bullet">
+                        <li><u><strong>Art:</strong></u> I typically just do art digitally these days. My go-to programs for art are Clip Studio for drawing, GIMP for editing images, and Aseprite for sprite work. I've also used MS Paint to edit sprites, specifically for recoloring.</li>
+                        <li><u><strong>Game Development:</strong></u> I've been a hobbyist game dev since about 2006/2007, starting with RPG Maker 2003. I've messed with every iteration of RPG Maker (even the Playstation and DS versions) up to RPG Maker MV. Most recently, I've been dabbling in Godot and that's the engine I'll likely be using going forward.</li>
+                        <li><u><strong>Tabletop Gaming:</strong></u> Not just board games, which I play plenty of, but also TTRPGs like Dungeons and Dragons. I've been my friend group's "forever DM" essentially since I started playing.</li>
+                    </ul>
+                </div>
+
+                <div class="section-background" style="border-radius: 15px 15px 0px 0px;">
+                    <h2 class="title-background">Most Recent Project</h2>
+
+                    <h3 class="subtitle-background">Lightbringer</h3>
+                    <p>A 2D pixel art platformer using light as its main mechanic.</p>
+
+                    <div class="three-column-layout"> <!-- row of screenshots. click a button, scrolls through the images one-by-one. -->
+                        <img src="images/projects/lightbringer/screenshot-1.png" alt="" class="screenshot shrunk">
+                        <img src="images/projects/lightbringer/screenshot-8.png" alt="" class="screenshot shrunk">
+                        <img src="images/projects/lightbringer/screenshot-6.png" alt="" class="screenshot shrunk">
+                    </div>
+
+                </div>
+
+                <div class="section-background" style="border-radius: 0px 0px 15px 15px; margin-block-end: 50px;">
+                    <h2 class="title-background">Most Recent Post</h2>
+
+                    <div class="subtitle-background">
+                        <div class="blog-title"> <!-- flex box this title -->
+                            <h3 style="margin-inline-end: 20px;">Setting Up My Dev Environment</h3>
+                            <h3 style="margin-inline-start: 20px;">06/06/2026</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="two-column-layout" style="margin-top: 20px;"> <!-- two-column-layout -->
+                        <p>This week's blog post is focused on Module 0, Setup and Tooling. In this module, I downloaded Visual Studio Code and set up my GitHub. Part of that was learning how to create repositories, make commits, and push those commits to GitHub.</p>
+                        <img src="images/blogs/the-journey-begins-screenshot.png" alt="A screenshot of my GitHub repository for a blog site." style="width: 550px;" class="screenshot">
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="contact-info">
+                    <p>Contact Info:</p>
+                    <p>Email: <a href="mailto:jinhoyun@outlook.com">jinhoyun@outlook.com</a></p>
+                    <p>GitHub: <a href="https://github.com/jachimaru">jachimaru</a></p>
+                    <p>Itch.io: <a href="https://jinhoyun.itch.io/">jinhoyun</a></p>
+                </div>
+
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
 </html>
