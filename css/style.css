@@ -12,30 +12,6 @@
     margin-inline: auto;
 }
 
-form {
-    text-align: center;
-}
-
-button {
-    background-color: #556078;
-    font-size: 24px;
-    padding: 10px;
-    margin-inline: auto;
-    border: #111 solid 5px;
-    border-radius: 15px;
-    position: relative;
-	box-shadow: 10px 10px 10px 0px rgba(35, 25, 43, 0.70);
-}
-
-button:hover,
-button:focus-visible {
-    color: #556C78;
-    background-color: #222527;
-    border: #7FC5DF solid 5px;
-    box-shadow: 10px 10px 10px 0px #7fc6df1e;
-    cursor: pointer;
-}
-
 body {
     font-family: 'Constantia', serif;
     font-size: 1.2rem;
@@ -297,17 +273,6 @@ footer {
     margin-block: 10px;
     justify-content: center;
 
-}
-
-.four-column-layout {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    margin-block: 10px;
-    justify-content: center;
-    text-align: center;
-    font-size: 32px;
 }
 
 .project-grid {
