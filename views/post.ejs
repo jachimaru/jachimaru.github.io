@@ -1,0 +1,41 @@
+<!DOCTYPE htmnl>
+<html>
+    <%- include('./partials/head.ejs') %>
+
+    <body>
+        <div class="wrapper-post">
+            <header>
+                <img src="../images/logo.png" alt="Logo depicting 'JHY' in purple." class="logo">
+
+                <%- include('./partials/nav.ejs') %>
+            </header>
+
+            <main>
+                <div>
+                    <div class="post-title post-background">
+                        <h1><%= blog.title %></h1>
+                        <h1><%= blog.date %></h1>
+                    </div>
+
+                    <div class="post-body">
+                        <h2><%= blog.mainTitle %></h2>
+                        <div>
+                            <%- blog.mainBody %>
+                        </div>
+                          
+                        <h2>What's Next</h2>
+                        <p><%- blog.whatsNextBody %></p>
+
+                        <h2><%= blog.verse %></h2>
+                        <p><%- blog.verseText %></p>
+                        <p><%= blog.verseBody %></p>
+
+                        <h3><em>- Soli Deo Gloria</em></h3>
+                    </div>
+                </div>
+            </main>
+
+            <%- include('./partials/footer.ejs') %>
+        </div>
+    </body>
+</html>

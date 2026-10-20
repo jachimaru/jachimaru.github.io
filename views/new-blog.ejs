@@ -1,0 +1,56 @@
+<!DOCTYPE htmnl>
+<html>
+    <%- include('./partials/head.ejs') %>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <img src="/images/logo.png" alt="Logo depicting 'JHY' in purple." class="logo">
+
+                <%- include('./partials/nav.ejs') %>
+            </header>
+
+            <main>
+                <h1 class="title-background">Create Blog</h1>
+                <div>
+                    <form action="/new-blog" method="POST">
+                        <div class="four-column-layout">
+                            <div class="section-background">
+                                <label for="title">Blog Title:</label>
+                                <input type="text" id="title" name="title" required>
+                                <label for="date">Date:</label>
+                                <input type="text" id="date" name="date" required>
+                                <label for="preview">Blog Preview:</label>
+                                <input type="text" id="preview" name="preview" required>
+                            </div>    
+                            <div class="section-background">
+                                <label for="mainTitle">Main Title:</label>
+                                <input type="text" id="mainTitle" required name="mainTitle">
+                                <label for="mainBody">Main Body:</label>
+                                <textarea id="mainBody" name="mainBody" required></textarea>
+                            </div>
+                            <div class="section-background">
+                                <label for="whatsNext">What's Next:</label>
+                                <input type="text" id="whatsNext" name="whatsNext" required>
+                                <label for="whatsNextBody">What's Next Body:</label>
+                                <textarea id="whatsNextBody" name="whatsNextBody" required></textarea>
+                            </div>
+                            <div class="section-background">
+                                <label for="verse">Verse:</label>
+                                <input type="text" id="verse" required name="verse">
+                                <label for="verseText">Verse Text:</label>
+                                <input type="text" id="verseText" name="verseText" required>
+                                <label for="verseBody">Verse Body:</label>
+                                <textarea id="verseBody" required name="verseBody"></textarea>
+                            </div>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+
+                </div>
+            </main>
+
+            <%- include('./partials/footer.ejs') %>
+        </div>
+    </body>
+</html>
